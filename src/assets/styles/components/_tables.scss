@@ -1,0 +1,35 @@
+/* Tables */
+
+.table {
+  margin-bottom: 0;
+  color: $text-muted; 
+  thead {
+    th {
+      border-top: 0;
+      border-bottom-width: 1px;
+      font-family: $type1;
+      font-weight: $font-weight-medium;
+      background-color: theme-color(primary);
+      color:#fff;
+      i{
+        margin-left: 0.325rem;
+      }
+    }
+  }
+  th,
+  td {
+    vertical-align: middle;
+    font-size: $default-font-size;
+    line-height: 1;
+    border-color:#DAD4B5 ;
+    .badge {
+      margin-bottom: 0;
+    }
+  }
+  &.table-borderless{
+    border: none;
+    tr,td,th{
+      border: none;
+    }
+  }
+}
